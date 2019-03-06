@@ -1,0 +1,62 @@
+@import 'variables';
+@import 'normalize';
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:  url('/fonts/Montserrat-Regular.eot') format('eot'),
+          url('/fonts/Montserrat-Regular.otf') format('otf'),
+          url('/fonts/Montserrat-Regular.ttf') format('ttf'),
+          url('/fonts/Montserrat-Regular.woff') format('woff'),
+          url('/fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-Regular", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+  outline: none;
+}
+
+.m-none {
+  margin: 0px;
+}
+
+.app-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-blue-rounded {
+    padding: 10px;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 38px;
+    min-width: 180px;
+    background-color: $blue;
+    border-radius: 22px;
+    color: white;
+    border-style: none;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    box-shadow: $grey-box-shadow;
+}
+
+.btn-blue-rounded:hover {
+  box-shadow: 0.1rem 0.7rem 1rem rgba(99, 99, 99, 0.6);
+}
+
+.text-blue {
+  color: $blue;
+}
